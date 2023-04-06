@@ -9,7 +9,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
       <body className="text-primary-text">
-        <div className="w-screen h-screen bg-gradient-to-b from-primary-800 to-secondary-400 fixed -z-50"></div>
+        <div className="w-full h-full bg-gradient-to-b from-primary-800 to-secondary-400 fixed -z-50"></div>
         {children}
       </body>
     </html>

@@ -3,7 +3,7 @@ import PageWrapper from "@/components/pagewrapper";
 export default function ProjectsPage() {
   return (
     <PageWrapper currentPage="projects">
-      <p>Projects</p>
+      <p className="text-xl">Projects</p>
     </PageWrapper>
   );
 }
