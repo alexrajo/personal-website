@@ -10,7 +10,7 @@ export default function PageWrapper(props: PageWrapperProps) {
 
   return (
     <div className="min-h-screen">
-      <NavBar currentPage={currentPage} className="xs:invisible xs:absolute" />
+      <NavBar currentPage={currentPage} className="xs:invisible xs:absolute sm:visible sm:relative" />
       <div className="p-8">{children}</div>
       <Footer />
       <MobileNav className="sm:invisible" />
