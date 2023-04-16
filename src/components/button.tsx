@@ -1,8 +1,11 @@
-export type ButtonProps = {
-  children?: React.ReactNode;
+export type SimpleButtonProps = {
   className?: string;
   onClick?: React.MouseEventHandler;
 };
+
+export type ButtonProps = {
+  children?: React.ReactNode;
+} & SimpleButtonProps;
 
 export const Button = (props: ButtonProps) => {
   const { children, className, onClick } = props;

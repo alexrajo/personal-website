@@ -4,6 +4,22 @@
 
 @font-face {
   font-family: roboto;
+  src: url("../../public/fonts/Roboto/Roboto-Bold.ttf");
+  font-stretch: normal;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("../../public/fonts/Roboto/Roboto-Black.ttf");
+  font-stretch: normal;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: roboto;
   src: url("../../public/fonts/Roboto/Roboto-Regular.ttf");
   font-stretch: normal;
   font-weight: normal;

@@ -1,20 +1,25 @@
 import Footer from "./footer";
-import { MobileNav, NavBar, NavBarProps } from "./nav";
+import { MobileHomeNav, MobileNav, NavBar, NavBarProps } from "./nav";
 
 interface PageWrapperProps extends NavBarProps {
   children: React.ReactNode;
 }
 
 export default function PageWrapper(props: PageWrapperProps) {
-  const { children, currentPage } = props;
+  const { children, currentPage, className } = props;
 
   return (
-    <div className="min-h-screen">
-      <NavBar currentPage={currentPage} className="xs:invisible xs:absolute sm:visible sm:relative" />
-      <div className="p-8">{children}</div>
+    <div className="min-h-screen flex flex-col justify-between">
+      <div className="min-h-full flex flex-col flex-1">
+        <NavBar currentPage={currentPage} className="xs:invisible xs:absolute sm:visible sm:relative" />
+        {currentPage == "home" ? (
+          <MobileHomeNav className="sm:invisible sm:absolute" />
+        ) : (
+          <MobileNav className="sm:invisible sm:absolute" currentPage={currentPage} />
+        )}
+        <div className={`p-8 ${className}`}>{children}</div>
+      </div>
       <Footer />
-      <MobileNav className="sm:invisible" />
-      <img src={"/images/BottomWave.svg"} alt="Bottom wave" className="-z-10 w-full h-auto absolute bottom-0" />
     </div>
   );
 }

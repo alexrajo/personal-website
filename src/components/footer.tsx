@@ -8,10 +8,13 @@ const Footer: React.FC<FooterProps> = (props) => {
   const { className } = props;
 
   return (
-    <div className={`bg-secondary-400 absolute bottom-0 left-0 right-0 drop-shadow-md py-2 ${className}`}>
-      <div className="w-full flex justify-center items-center flex-col">
+    <div className={`${className}`}>
+      <img src={"/images/BottomWave.svg"} alt="Footer wave" className="-z-10 w-full h-auto" />
+      <div className="w-full flex justify-center items-center flex-col py-2 bg-secondary-400 drop-shadow-md">
         <p>2023 - Alexander Rathke Johansen</p>
-        <Link href={"/licenses"}>Licenses</Link>
+        <Link href={"/licenses"} className="xs:invisible xs:absolute sm:visible sm:relative">
+          Licenses
+        </Link>
       </div>
     </div>
   );
