@@ -7,5 +7,23 @@
       "href": "https://github.com/alexrajo/personal-website"
     },
     "description": "This is my personal website, made in NextJS, TypeScript and TailwindCSS. On this site, I can showcase my project and introduce myself to those who are interested."
+  },
+  {
+    "title": "Stonks 2.0",
+    "year": "2021",
+    "link": {
+      "name": "GitHub",
+      "href": "https://github.com/alexrajo/Stonks-2.0"
+    },
+    "description": "The second iteration of a hobby project where you can analyze stocks over a given time period using a backtesting library. Among other things, the program provides a visual representation of how different trading strategies work on a given stock over a given time period."
+  },
+  {
+    "title": "Vehicle Weight Lifting",
+    "year": "2020-2023",
+    "link": {
+      "name": "Roblox",
+      "href": "https://www.roblox.com/games/5182200788/Vehicle-Weight-Lifting"
+    },
+    "description": "A Roblox game built using Luau. The objective of the game involves racking up strength and battling with other players."
   }
 ]

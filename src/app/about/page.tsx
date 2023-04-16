@@ -28,21 +28,19 @@ export default function AboutPage() {
         <p className="text-heading">About me</p>
         <br />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus sapien a pharetra iaculis. Vivamus ut
-          lacus eu magna dictum efficitur a et mi. Orci varius natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Aenean at nibh non nisi porttitor imperdiet. Nullam nulla mi, cursus ut nulla sit
-          amet, rutrum sagittis nisl.
+          I am Alexander, a 20 year old student from Norway. I am currently studying for a Masters in Technology at NTNU
+          in Trondheim, Norway. My interests involve game development and web development.
         </p>
         <div className="xs:mt-10 sm:mt-20">
-          <p className="text-subheading">Technologies</p>
+          <p className="text-subheading">Technologies & languages</p>
           <br />
           <div className="grid xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5">
             <TechDisplay name="React" imageUrl="/images/react-icon.svg" />
-            <TechDisplay name="React" imageUrl="/images/react-icon.svg" />
-            <TechDisplay name="React" imageUrl="/images/react-icon.svg" />
-            <TechDisplay name="React" imageUrl="/images/react-icon.svg" />
-            <TechDisplay name="React" imageUrl="/images/react-icon.svg" />
-            <TechDisplay name="React" imageUrl="/images/react-icon.svg" />
+            <TechDisplay name="NodeJS" imageUrl="/images/nodejs-icon.svg" />
+            <TechDisplay name="TypeScript" imageUrl="/images/typescript-icon.svg" />
+            <TechDisplay name="Microsoft Azure" imageUrl="/images/microsoft-azure-icon.svg" />
+            <TechDisplay name="ExpressJS" imageUrl="/images/expressjs-icon.svg" />
+            <TechDisplay name="Lua" imageUrl="/images/lua-logo.svg" />
           </div>
         </div>
       </div>
