@@ -1,11 +1,11 @@
 [
   {
-    "title": "Project",
-    "year": 2020,
+    "title": "Personal website",
+    "year": "2023",
     "link": {
       "name": "GitHub",
-      "href": "https://github.com/alexrajo"
+      "href": "https://github.com/alexrajo/personal-website"
     },
-    "description": "Stuff here"
+    "description": "This is my personal website, made in NextJS, TypeScript and TailwindCSS. On this site, I can showcase my project and introduce myself to those who are interested."
   }
 ]

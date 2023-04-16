@@ -3,7 +3,7 @@ import Link from "next/link";
 export type Project = {
   title: string;
   year: string;
-  link?: { name: string; href: string };
+  link?: LinkType;
   description?: string;
 };
 
@@ -24,8 +24,10 @@ export const ProjectDisplay = (props: ProjectDisplayProps) => {
           {link.name}
         </Link>
       )}
-      {description !== undefined && <p>{description}</p>}
-      {children}
+      <div className="mt-5">
+        {description !== undefined && <p>{description}</p>}
+        {children}
+      </div>
     </div>
   );
 };

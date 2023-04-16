@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./button";
 
-export type Page = "home" | "projects" | "aboutme" | "contact";
+export type Page = "home" | "projects" | "about" | "socials" | "licenses";
 
 export type NavLinkContainerProps = {
   currentPage?: Page;
@@ -31,40 +31,29 @@ export const NavLinkContainer: React.FC<NavLinkContainerProps> = (props) => {
 
   return (
     <div className={`flex text-3xl space-x-2 mt-16 ${className}`}>
-      <Link
-        href={"/"}
-        className={`hover:drop-shadow-lg hover:text-white ${
-          currentPage === "home" && "underline"
-        }`}
-      >
+      <Link href={"/"} className={`hover:drop-shadow-lg hover:text-white ${currentPage === "home" && "underline"}`}>
         Home
       </Link>
       <p>|</p>
       <Link
         href={"/projects"}
-        className={`hover:drop-shadow-lg hover:text-white ${
-          currentPage === "projects" && "underline"
-        }`}
+        className={`hover:drop-shadow-lg hover:text-white ${currentPage === "projects" && "underline"}`}
       >
         Projects
       </Link>
       <p>|</p>
       <Link
-        href={"/aboutme"}
-        className={`hover:drop-shadow-lg hover:text-white ${
-          currentPage === "aboutme" && "underline"
-        }`}
+        href={"/about"}
+        className={`hover:drop-shadow-lg hover:text-white ${currentPage === "about" && "underline"}`}
       >
         About me
       </Link>
       <p>|</p>
       <Link
-        href={"/contact"}
-        className={`hover:drop-shadow-lg hover:text-white ${
-          currentPage === "contact" && "underline"
-        }`}
+        href={"/socials"}
+        className={`hover:drop-shadow-lg hover:text-white ${currentPage === "socials" && "underline"}`}
       >
-        Contact
+        Socials
       </Link>
     </div>
   );
@@ -74,9 +63,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
   const { className } = props;
 
   return (
-    <nav
-      className={`bg-primary-800 drop-shadow-md p-8 flex justify-center items-center ${className}`}
-    >
+    <nav className={`bg-primary-800 drop-shadow-md p-8 flex justify-center items-center ${className}`}>
       <NavLinkContainer {...props} />
     </nav>
   );
@@ -91,21 +78,14 @@ export const MobileNavLinkList: React.FC<MobileNavLinkListProps> = (props) => {
         isOpen ? "" : "pointer-events-none"
       }`}
     >
-      <nav
-        className={`${
-          isOpen ? "" : "transform translate-y-full"
-        } shadow-md transition-transform duration-300`}
-      >
-        <div className="flex flex-col text-center bg-white text-tertiary-text rounded-t-md space-y-5 p-5 font-bold items-center">
+      <nav className={`${isOpen ? "" : "transform translate-y-full"} shadow-md transition-transform duration-300`}>
+        <div className="flex flex-col text-center bg-white text-tertiary-text rounded-t-md space-y-5 p-5 items-center">
           <Link href={"/"}>Home</Link>
           <Link href={"/projects"}>Projects</Link>
-          <Link href={"/aboutme"}>About me</Link>
-          <Link href={"/contact"}>Contact</Link>
+          <Link href={"/about"}>About me</Link>
+          <Link href={"/socials"}>Socials</Link>
           <Link href={"/licenses"}>Licenses</Link>
-          <Button
-            onClick={onCloseClicked}
-            className="text-primary-text max-w-fit"
-          >
+          <Button onClick={onCloseClicked} className="text-primary-text max-w-fit">
             Close
           </Button>
         </div>
@@ -131,18 +111,10 @@ export const MobileHomeNav: React.FC<MobileHomeNavProps> = (props) => {
       <Button className={`${buttonClassName}`} onClick={onMenuButtonClicked}>
         <div className="flex space-x-5">
           <p>Menu</p>
-          <Image
-            src="/images/HamburgerMenuIcon.svg"
-            alt="hamburger-menu"
-            width="24"
-            height={(28 / 39) * 24}
-          />
+          <Image src="/images/HamburgerMenuIcon.svg" alt="hamburger-menu" width="24" height={(28 / 39) * 24} />
         </div>
       </Button>
-      <MobileNavLinkList
-        isOpen={isOpen}
-        onCloseClicked={onCloseButtonClicked}
-      />
+      <MobileNavLinkList isOpen={isOpen} onCloseClicked={onCloseButtonClicked} />
     </div>
   );
 };
@@ -173,20 +145,12 @@ export const MobileNav: React.FC<MobileNavProps> = (props) => {
                 height={(30.4 * 32) / 39}
               />
             ) : (
-              <Image
-                src="/images/HamburgerMenuIcon.svg"
-                alt="hamburger-menu"
-                width="32"
-                height={(28 / 39) * 32}
-              />
+              <Image src="/images/HamburgerMenuIcon.svg" alt="hamburger-menu" width="32" height={(28 / 39) * 32} />
             )}
           </div>
         </button>
       </div>
-      <MobileNavLinkList
-        isOpen={isOpen}
-        onCloseClicked={onCloseButtonClicked}
-      />
+      <MobileNavLinkList isOpen={isOpen} onCloseClicked={onCloseButtonClicked} />
     </div>
   );
 };
