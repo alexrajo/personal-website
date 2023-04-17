@@ -3,7 +3,7 @@ import Link from "next/link";
 import licenses, { License } from "./licenses";
 
 export const metadata = {
-  title: "Licenses",
+  title: "Licenses - Alexander RJ",
   description: "The licenses for packages and assets used in this project.",
 };
 
@@ -22,7 +22,7 @@ const LicenseDisplay = (props: License) => {
 export default function LicensesPage() {
   return (
     <PageWrapper currentPage="licenses">
-      <p className="text-heading mb-5 xs:invisible xs:absolute sm:visible sm:relative">Licenses</p>
+      <h1 className="xs:invisible xs:absolute sm:visible sm:relative">Licenses</h1>
       <div className="flex flex-col space-y-5">
         {licenses.map((license) => (
           <LicenseDisplay key={license.name} {...license} />

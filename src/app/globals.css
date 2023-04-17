@@ -1,4 +1,14 @@
 @tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-heading mb-5;
+  }
+  h2 {
+    @apply text-subheading;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 

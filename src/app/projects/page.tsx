@@ -3,8 +3,8 @@ import { Project, ProjectDisplay } from "./display";
 import projects from "./projects.json";
 
 export const metadata = {
-  title: "Projects",
-  description: "My projects",
+  title: "Projects - Alexander RJ",
+  description: "A showcase of my projects. These are both hobby projects and school projects.",
 };
 
 export default function ProjectsPage() {
