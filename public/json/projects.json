@@ -9,6 +9,15 @@
     "description": "This is my personal website, made in NextJS, TypeScript and TailwindCSS. On this site, I can showcase my projects and introduce myself to those who are interested."
   },
   {
+    "title": "Calendar App",
+    "year": "2022",
+    "link": {
+      "name": "GitHub",
+      "href": "https://github.com/alexrajo/JavaCalendarApp"
+    },
+    "description": "A calendar application built in Java with JavaFX. The application allows for adding single or recurring events, as well as todo-items."
+  },
+  {
     "title": "Stonks 2.0",
     "year": "2021",
     "link": {
