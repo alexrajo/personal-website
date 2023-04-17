@@ -2,6 +2,11 @@ import PageWrapper from "@/components/pagewrapper";
 import Link from "next/link";
 import licenses, { License } from "./licenses";
 
+export const metadata = {
+  title: "Licenses",
+  description: "The licenses for packages and assets used in this project.",
+};
+
 const LicenseDisplay = (props: License) => {
   const { name, content, link } = props;
 

@@ -1,5 +1,3 @@
-"use client";
-
 import PageWrapper from "@/components/pagewrapper";
 import { Project, ProjectDisplay } from "./display";
 import projects from "./projects.json";
