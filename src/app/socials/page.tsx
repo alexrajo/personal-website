@@ -1,6 +1,11 @@
 import PageWrapper from "@/components/pagewrapper";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Socials",
+  description: "This page shows my different socials and how you can reach me.",
+};
+
 export default function ContactPage() {
   return (
     <PageWrapper currentPage="socials" className="flex flex-1">
