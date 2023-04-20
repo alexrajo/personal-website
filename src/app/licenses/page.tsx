@@ -40,6 +40,19 @@ export default function LicensesPage() {
             IconScout
           </Link>
         </div>
+        <div>
+          <Link href={"https://lottiefiles.com/37799-starry-background"} className="text-link underline">
+            37799-starry-background animation
+          </Link>{" "}
+          by{" "}
+          <Link href={"https://lottiefiles.com/ashleycmy"} className="text-link underline">
+            ashleycmy
+          </Link>{" "}
+          from{" "}
+          <Link href={"https://lottiefiles.com"} className="text-link underline">
+            LottieFiles
+          </Link>
+        </div>
       </div>
     </PageWrapper>
   );
