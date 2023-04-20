@@ -25,7 +25,7 @@ export default function Home() {
           <div className="-z-10 w-full h-auto absolute bottom-0 pointer-events-none">
             <img src={"/images/BottomWave.svg"} alt="Bottom wave" width={"100%"} />
           </div>
-          <div className="absolute left-0 right-0 bottom-5 flex justify-center">
+          <div className="absolute left-0 right-0 bottom-5 flex justify-center xs:invisible sm:visible">
             <Link href={"/licenses"}>Licenses</Link>
           </div>
         </div>
