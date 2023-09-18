@@ -14,7 +14,11 @@ const LicenseDisplay = (props: License) => {
     <div>
       <p className="font-bold">{name}</p>
       <p>{content}</p>
-      {link && <Link href={link.href}>{link.name}</Link>}
+      {link && (
+        <Link href={link.href} target="_blank">
+          {link.name}
+        </Link>
+      )}
     </div>
   );
 };
@@ -22,34 +26,60 @@ const LicenseDisplay = (props: License) => {
 export default function LicensesPage() {
   return (
     <PageWrapper currentPage="licenses">
-      <h1 className="xs:invisible xs:absolute sm:visible sm:relative">Licenses</h1>
+      <h1 className="xs:invisible xs:absolute sm:visible sm:relative">
+        Licenses
+      </h1>
       <div className="flex flex-col space-y-5">
         {licenses.map((license) => (
           <LicenseDisplay key={license.name} {...license} />
         ))}
         <div>
-          <Link href="https://iconscout.com/icons/email" target="_blank" className="text-link underline">
+          <Link
+            href="https://iconscout.com/icons/email"
+            target="_blank"
+            className="text-link underline"
+          >
             Email Icon
           </Link>{" "}
           by{" "}
-          <Link href="https://iconscout.com/contributors/google-inc" target="_blank" className="text-link underline">
+          <Link
+            href="https://iconscout.com/contributors/google-inc"
+            target="_blank"
+            className="text-link underline"
+          >
             Google Inc.
           </Link>{" "}
           on{" "}
-          <Link href="https://iconscout.com" target="_blank" className="text-link underline">
+          <Link
+            href="https://iconscout.com"
+            target="_blank"
+            className="text-link underline"
+          >
             IconScout
           </Link>
         </div>
         <div>
-          <Link href={"https://lottiefiles.com/37799-starry-background"} className="text-link underline">
+          <Link
+            href={"https://lottiefiles.com/37799-starry-background"}
+            className="text-link underline"
+            target="_blank"
+          >
             37799-starry-background animation
           </Link>{" "}
           by{" "}
-          <Link href={"https://lottiefiles.com/ashleycmy"} className="text-link underline">
+          <Link
+            href={"https://lottiefiles.com/ashleycmy"}
+            className="text-link underline"
+            target="_blank"
+          >
             ashleycmy
           </Link>{" "}
           from{" "}
-          <Link href={"https://lottiefiles.com"} className="text-link underline">
+          <Link
+            href={"https://lottiefiles.com"}
+            className="text-link underline"
+            target="_blank"
+          >
             LottieFiles
           </Link>
         </div>
