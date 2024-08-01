@@ -1,5 +1,14 @@
 [
   {
+    "title": "Food Ltd.",
+    "year": "2023",
+    "link": {
+      "name": "GitHub",
+      "href": "https://github.com/alexrajo/food-ltd"
+    },
+    "description": "A food recipe rating website developed as a group project in the IT2810 course at NTNU. The project taught me a lot about working with Apache HTTP Server, how GraphQL APIs work and end-to-end testing."
+  },
+  {
     "title": "Personal website",
     "year": "2023",
     "link": {
